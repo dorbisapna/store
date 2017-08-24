@@ -22,7 +22,7 @@
 				
 				<li> 
 					<a href="#" class="nav-top-item current"> <!-- Add the class "current" to current menu item -->
-					Products
+					 Products
 					</a>
 					<ul>
 						<li><a href="#">Write a new Article</a></li>
@@ -34,7 +34,7 @@
 				
 				<li>
 					<a href="#" class="nav-top-item">
-						Pages
+						List Products
 					</a>
 					<ul>
 						<li><a href="#">Create a new Page</a></li>
@@ -44,19 +44,19 @@
 				
 				<li>
 					<a href="#" class="nav-top-item">
-						Image Gallery
+						Tags
 					</a>
-					<ul>
+					<!--<ul>
 						<li><a href="#">Upload Images</a></li>
 						<li><a href="#">Manage Galleries</a></li>
 						<li><a href="#">Manage Albums</a></li>
 						<li><a href="#">Gallery Settings</a></li>
-					</ul>
+					</ul>-->
 				</li>
 				
 				<li>
 					<a href="#" class="nav-top-item">
-						Events Calendar
+						Categories
 					</a>
 					<ul>
 						<li><a href="#">Calendar Overview</a></li>
@@ -65,8 +65,8 @@
 					</ul>
 				</li>
 				
-				<li>
-					<a href="#" class="nav-top-item">
+				<li>-->
+					<!--<a href="#" class="nav-top-item">
 						Settings
 					</a>
 					<ul>
@@ -77,7 +77,7 @@
 					</ul>
 				</li>      
 				
-			</ul> <!-- End #main-nav -->
+			</ul> --><!-- End #main-nav -->
 			
 			<div id="messages" style="display: none"> <!-- Messages are shown when a link with these attributes are clicked: href="#messages" rel="modal"  -->
 				
