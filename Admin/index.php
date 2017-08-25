@@ -1,6 +1,10 @@
 <?php include("header.php") ?>
 
-	<body><div id="body-wrapper"> <!-- Wrapper for the radial gradient background -->
+<?php 
+
+$page = basename($_SERVER['PHP_SELF']);
+
+?>
 		
 		<?php include("sidebar.php") ?>
 		
@@ -53,7 +57,7 @@
 
 			<div class="content-box-header">
 
-			<h3> Products</h3>
+			<h3> Add Products</h3>
 				
 			</div>
 
@@ -306,7 +310,7 @@
 
 
 
-			/////////////////////////////////////////////////////////////////////////////////////////
+			<!--/////////////////////////////////////////////////////////////////////////////////////////-->
 			
 			<!--<div class="content-box">--><!-- Start Content Box -->
 				
@@ -329,7 +333,7 @@
 
 
 
-			//////////////////////////////////////////////////////////////////////////////////////////
+			<!--//////////////////////////////////////////////////////////////////////////////////////////-->
 			
 			<!--<div class="content-box column-left">
 				
@@ -414,6 +418,4 @@
 			
 				<?php include("footer.php") ?>
 			
-		</div> <!-- End #main-content -->
-	</div></body>
-</html>
+		

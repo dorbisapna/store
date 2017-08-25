@@ -17,3 +17,4 @@
 <script type="text/javascript" src="resources/scripts/jquery.datePicker.js"></script>
 <script type="text/javascript" src="resources/scripts/jquery.date.js"></script>
 </head>
+<body><div id="body-wrapper"> <!-- Wrapper for the radial gradient background -->

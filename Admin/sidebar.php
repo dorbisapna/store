@@ -20,25 +20,62 @@
 					</a>       
 				</li>
 				
+				<?php 
+				if($page=="index.php"):
+				?>
+
 				<li> 
+					<a href="#" class="nav-top-item"> <!-- Add the class "current" to current menu item -->
+					 Products
+					</a>
+					<ul>
+						<li><a href="addproducts.php">Add Products</a></li>
+						<li><a href="manageproduct.php">Manage Products</a></li> <!-- Add class "current" to sub menu items also -->
+					</ul>
+				</li>
+                 <?php
+                 endif; ?>
+
+                 <?php
+                 if($page=="addproducts.php"):
+                 ?>
+
+                  <li> 
 					<a href="#" class="nav-top-item current"> <!-- Add the class "current" to current menu item -->
 					 Products
 					</a>
 					<ul>
-						<li><a href="#">Write a new Article</a></li>
-						<li><a class="current" href="#">Manage Products</a></li> <!-- Add class "current" to sub menu items also -->
-						<li><a href="#">Manage Comments</a></li>
-						<li><a href="#">Manage Categories</a></li>
+						<li><a  class="current" href="addproducts.php">Add Products</a></li>
+						<li><a href="manageproduct.php">Manage Products</a></li> <!-- Add class "current" to sub menu items also -->
 					</ul>
 				</li>
+				<?php 
+				endif ;
+				?>
+
+				<?php
+				if($page=="manageproduct.php"):
+				?>
+			    <li> 
+					<a href="#" class="nav-top-item current"> <!-- Add the class "current" to current menu item -->
+					 Products
+					</a>
+					<ul>
+						<li><a href="addproducts.php">Add Products</a></li>
+						<li><a  class="current" href="manageproduct.php">Manage Products</a></li> <!-- Add class "current" to sub menu items also -->
+					</ul>
+				</li>
+				<?php
+				endif ;
+				?>
 				
 				<li>
 					<a href="#" class="nav-top-item">
 						List Products
 					</a>
 					<ul>
-						<li><a href="#">Create a new Page</a></li>
-						<li><a href="#">Manage Pages</a></li>
+						<li><a href="#">Create a new List</a></li>
+						<li><a href="#">Manage List</a></li>
 					</ul>
 				</li>
 				
@@ -53,29 +90,22 @@
 						<li><a href="#">Gallery Settings</a></li>
 					</ul>-->
 				</li>
+
+
+                 <?php
+                 //if($page==""):
+                 ?>
 				
 				<li>
-					<a href="#" class="nav-top-item">
+					<a href="#" class="nav-top-item" >
 						Categories
 					</a>
 					<ul>
-						<li><a href="#">Calendar Overview</a></li>
-						<li><a href="#">Add a new Event</a></li>
-						<li><a href="#">Calendar Settings</a></li>
+						<li><a href="#">Electronics</a></li>
+						<li><a href="#">Accessories</a></li>
+						<li><a href="manageproduct.php">Sports</a></li>
 					</ul>
 				</li>
-				
-				<li>-->
-					<!--<a href="#" class="nav-top-item">
-						Settings
-					</a>
-					<ul>
-						<li><a href="#">General</a></li>
-						<li><a href="#">Design</a></li>
-						<li><a href="#">Your Profile</a></li>
-						<li><a href="#">Users and Permissions</a></li>
-					</ul>
-				</li>      
 				
 			</ul> --><!-- End #main-nav -->
 			
