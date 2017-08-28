@@ -21,7 +21,7 @@
 				</li>
 				
 				<?php 
-				if($page=="index.php"):
+				if($page=="index.php" || $page=="create_category.php" || $page=="manage_category.php"):
 				?>
 
 				<li> 
@@ -91,23 +91,61 @@
 					</ul>-->
 				</li>
 
-
-                 <?php
-                 //if($page==""):
-                 ?>
+				<?php 
+				if($page=="index.php" || $page=="addproducts.php" || $page=="manageproduct.php"):
+				?> 
 				
 				<li>
 					<a href="#" class="nav-top-item" >
 						Categories
 					</a>
 					<ul>
-						<li><a href="#">Electronics</a></li>
-						<li><a href="#">Accessories</a></li>
-						<li><a href="manageproduct.php">Sports</a></li>
+						<li><a href="create_category.php">Create Category</a></li>
+						<li><a href="manage_category.php">Manage Category</a></li>
 					</ul>
 				</li>
+
+				<?php
+				endif ;
+				?>
+
+				<?php
+				if($page=="create_category.php"):
+				?>
+
+				<li>
+					<a href="#" class="nav-top-item current" >
+						Categories
+					</a>
+					<ul>
+						<li><a href="create_category.php" class="current">Create Category</a></li>
+						<li><a href="manage_category.php">Manage Category</a></li>
+					</ul>
+				</li>
+
+				<?php
+				endif ;
+				?>
+
+				<?php
+				if($page=="manage_category.php"):
+				?>
+
+				<li>
+					<a href="#" class="nav-top-item current" >
+						Categories
+					</a>
+					<ul>
+						<li><a href="create_category.php">Create Category</a></li>
+						<li><a href="manage_category.php" class="current">Manage Category</a></li>
+					</ul>
+				</li>
+
+				<?php
+				endif ;
+				?>
 				
-			</ul> --><!-- End #main-nav -->
+			</ul> <!-- End #main-nav -->
 			
 			<div id="messages" style="display: none"> <!-- Messages are shown when a link with these attributes are clicked: href="#messages" rel="modal"  -->
 				

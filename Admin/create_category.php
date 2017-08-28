@@ -1,20 +1,13 @@
 <?php include("header.php") ?>
-<?php 
-
-$page = basename($_SERVER['PHP_SELF']);
-
-?>
-
 <?php
-if(isset($_GET["notification"]))
-	 {
-	 	$f_notification=$_GET["notification"];
-	 }
-?>
+
+    $page=basename($_SERVER['PHP_SELF']);
+
+ ?>
 
 <?php include("sidebar.php") ?>
 
-	<div id="main-content"> <!-- Main Content Section with everything -->
+<div id="main-content"> <!-- Main Content Section with everything -->
 			
 			<noscript> <!-- Show a notification if the user has disabled javascript -->
 				<div class="notification error png_bg">
@@ -63,7 +56,7 @@ if(isset($_GET["notification"]))
 
 			<div class="content-box-header">
 
-			<h3> Add Products</h3>
+			<h3>Create Category</h3>
 				
 			</div>
 
@@ -71,40 +64,16 @@ if(isset($_GET["notification"]))
 					
 					<div class="tab-content default-tab" id="tab1"> <!-- This is the target div. id must match the href of this div's tab -->
 
-						<form action="added_to_form.php" method="post" enctype="multipart/form-data">
+						<form action="insert_categeory.php" method="post" enctype="multipart/form-data">
 							
 							<fieldset> <!-- Set class to "column-left" or "column-right" on fieldsets to divide the form into columns -->
-
-								<?php if(isset($_GET["notification"])):
-								
-									if($f_notification==0):
-								?>
-								
-									<p>
-									<span class="input-notification error png_bg" required>Error message</span>
-									</p>
-								<?php endif; endif;?>
-								<?php if(isset($_GET["notification"])):
-								
-									if($f_notification==1):
-								?>
-								
-									<p>
-									<span class="input-notification success png_bg" required>Successful message</span>
-									</p>
-								<?php endif; endif;?>
 								
 								<p>
-									<label>Product Name</label>
-										<input class="text-input small-input" type="text" name="pro_name" id="small-input" required="Enter Product Name" /> <!-- Classes for input-notification: success, error, information, attention -->
+									<label>Category Name</label>
+										<input class="text-input small-input" type="text" name="cat_name" id="small-input" /><span class="input-notification success png_bg"></span> <!-- Classes for input-notification: success, error, information, attention -->
 										<br /><small>A small description of the field</small>
 								</p>
-								
-								<p>
-									<label>Product Price</label>
-									<input class="text-input medium-input datepicker" type="text" name="pro_price" id="medium-input" required="Enter Price" /> 
-								</p>
-								
+
 								<p>
 									<?php include("config.php") ?>
 									<?php
@@ -127,7 +96,7 @@ if(isset($_GET["notification"]))
 								
 								<p>
 									<label>Categories</label>              
-									<select name="pro_category" class="small-input">
+									<select name="cat_category" class="small-input">
 										<option value="select">Select Category</option>
 										<?php foreach($dropdown as $key=>$value): ?>
 										 <option value="<?php echo $value['category']?>"><?php echo $value['category']?>
@@ -137,11 +106,6 @@ if(isset($_GET["notification"]))
 								</p>
 								
 
-								<p>
-									<label>Product Image</label>
-									<input  type="file" name="image">
-								</p>
-								
 								<p>
 									<input class="button" name="submit" type="submit" value="Submit" />
 								</p>

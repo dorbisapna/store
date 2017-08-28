@@ -6,8 +6,13 @@ $items = array();
 $name = $_POST['pro_name'];
 $price = $_POST['pro_price'];
 $category = $_POST['pro_category'];
+$filename ="";
 
-		$filename ="";
+		if($name=""|| $price=""|| $category="")
+		{
+			header("Location:addproducts.php?notification=0");
+		}
+		
         if(isset($_FILES['image']))
         {  // echo "doooo";
 
@@ -24,7 +29,7 @@ $category = $_POST['pro_category'];
 	  	$category1 = $category;
 	  	$image1 = $filename;
 	  	$stmt->execute();
-	  	header("Location:addproducts.php");
+	  	header("Location:addproducts.php?notification=1");
 
 	  }
 

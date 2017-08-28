@@ -10,3 +10,4 @@ $stmt->execute();
 
 header("Location:manageproduct.php");
 ?>
+
