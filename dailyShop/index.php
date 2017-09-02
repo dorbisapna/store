@@ -1,5 +1,6 @@
-<?php include("header.php"); ?>
 <?php include("config.php"); ?>
+<?php include ("functions.php"); ?>
+<?php $index= basename($_SERVER['PHP_SELF']); ?>
 
 <?php
 $women = array();
@@ -49,7 +50,7 @@ $electronic_item[]=array("name"=>$m2_name,"new_price"=>$m2_new_price,"old_price"
 }
 
 ?>
-
+<?php include("header.php"); ?>
   <!-- / menu -->
   <!-- Start slider -->
   <section id="aa-slider">
@@ -221,7 +222,7 @@ $electronic_item[]=array("name"=>$m2_name,"new_price"=>$m2_new_price,"old_price"
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/man/<?php echo $value['image'] ?>" alt="polo shirt img"></a>
-                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
                               <figcaption>
                               <h4 class="aa-product-title"><a href="#"><?php echo $value['name'] ?></a></h4>
                               <span class="aa-product-price"></span><?php echo "$".$value['new_price']?></span><span class="aa-product-price"><del><?php echo "$".$value['old_price'] ?></del></span>
@@ -249,7 +250,7 @@ $electronic_item[]=array("name"=>$m2_name,"new_price"=>$m2_new_price,"old_price"
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/women/<?php echo $value['image']?>" alt="polo shirt img"></a>
-                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
                             <figcaption>
                               <h4 class="aa-product-title"><a href="#"><?php echo $value['name']; ?></a></h4>
                               <span class="aa-product-price"><?php echo "$".$value['new_price']; ?></span><span class="aa-product-price"><del><?php echo "$".$value['old_price']; ?></del></span>
@@ -277,7 +278,7 @@ $electronic_item[]=array("name"=>$m2_name,"new_price"=>$m2_new_price,"old_price"
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/sports/<?php echo $value['image'] ?>" alt="polo shirt img"></a>
-                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
                             <figcaption>
                               <h4 class="aa-product-title"><a href="#"><?php echo $value['name']; ?></a></h4>
                               <span class="aa-product-price"></span><?php echo $value['new_price']; ?></span><span class="aa-product-price"><del><?php echo $value['old_price']; ?></del></span>
@@ -304,7 +305,7 @@ $electronic_item[]=array("name"=>$m2_name,"new_price"=>$m2_new_price,"old_price"
                         <li>
                           <figure>
                             <a class="aa-product-img" href="#"><img src="img/electronics/<?php echo $value['image'] ?>" alt="polo shirt img"></a>
-                            <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                            <a class="aa-add-card-btn" href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
                             <figcaption>
                               <h4 class="aa-product-title"><a href="#"><?php echo $value['name'] ?></a></h4>
                               <span class="aa-product-price"><?php echo $value['new_price'] ?></span><span class="aa-product-price"><del><?php echo $value['old_price'] ?></del></span>
